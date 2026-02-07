@@ -22,7 +22,7 @@ def modifier_tache(taches):
                 task = input("Quelle est la nouvelle tâche : ")
                 etat = input("L'as-tu faite ? (oui/non) : ")
                 taches[num-1] = {"tache": task, "done": etat.lower() == "oui"}
-                print("✏️ Tâche modifiée !\n")
+                print("Tâche modifiée !\n")
                 return
             else:
                 print("Numéro non valide, réessaie.")
@@ -63,7 +63,7 @@ while True:
     elif choix == "4":
         afficher_taches(taches)
     elif choix == "5":
-        print("👋 Bye !")
+        print("Au revoir !")
         break
     else:
         print("Choix invalide, réessaie.\n")
